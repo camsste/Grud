@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wectornanime">
+    <title>Cadastro de alunos</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="formAluno">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+            <button type="button" id="btnSalvar" onclick="salvarAluno()">Salvar</button>
+            <button type="button" id="btnAtualizar" onclick="atualizarAluno()" style="display: none;">Atualizar</button>
+        </form>
+        <h2>Alunos Cadastrados</h2>
+        <ul id="listaAlunos">
+
+        </ul>
+    </main>
+    
+</body>
+</html>
